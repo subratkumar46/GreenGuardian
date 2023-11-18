@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>SignIn Form</title>
+    <link rel="stylesheet" href="/css/signupFormStyle.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">SignUp Form</div>
+      <form action="/signin" method="post">
+        <div class="field">
+          <input type="text" name="email" required />
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input type="password" name="password" required />
+          <label>Password</label>
+        </div>
+        <div class="field">
+          <select
+            name="role"
+            id="role"
+            class="input-field"
+            style="
+              border: 1px solid gray;
+              color: gray;
+              padding: 10px;
+              font-size: 16px;
+              margin-left: 18%;
+            "
+            required
+          >
+            <option value="customer">Customer</option>
+            <option value="municipalcorparation">Municipal Corparation</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="submit" value="Login" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
